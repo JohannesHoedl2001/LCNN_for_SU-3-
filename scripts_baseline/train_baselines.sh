@@ -1,0 +1,9 @@
+./train_D2_trW_1x1_S1.sh
+./train_D2_trW_1x2_S1.sh
+./train_D2_trW_1x3_S1.sh
+./train_D2_trW_2x2_S1.sh
+./train_D2_trW_2x3_S1.sh
+./train_D2_trW_3x3_S1.sh
+./train_D2_trW_4x4_S1.sh
+./train_D2_trW_4x4_S1_16x16.sh
+./train_D2_trW_4x4_S1_large.sh
