@@ -1,6 +1,6 @@
 # LCNN for SU(3)
 
-This repository extends the Lattice gauge equivariant convolutional neural networks (L-CNNs) of Favoni et al. to the SU(3) group.
+This repository extends the Lattice gauge equivariant convolutional neural network (L-CNN) of Favoni et al. to the SU(3) group.
 
 ---
 
