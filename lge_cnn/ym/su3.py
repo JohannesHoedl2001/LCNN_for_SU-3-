@@ -799,7 +799,7 @@ def to_matrix(u):
             
     return ret0, ret1, ret2, ret3, ret4, ret5, ret6, ret7, ret8
     
-# Turn 3x3 complex matrices to real-valued representation M = beta0 id0 + beta1 gm1 +...+ beta8 gm8
+# Turn 3x3 complex matrices to complex-valued representation M = beta0 id0 + beta1 gm1 +...+ beta8 gm8
 @myjit
 def to_repr(m):
     beta0, beta1, beta2, beta3, beta4, beta5, beta6, beta7, beta8 = (GROUP_TYPE_COMPLEX(0.0), GROUP_TYPE_COMPLEX(0.0), GROUP_TYPE_COMPLEX(0.0), GROUP_TYPE_COMPLEX(0.0), 
