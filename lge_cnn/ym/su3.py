@@ -475,12 +475,7 @@ def mul_s(g0, f):  # TODO: rename to mul
 
 # Multiply by scalar, real
 @myjit
-def mul_s_real(g0, f):  # TODO: rename to mul
-    # Unfortunately, tuple creation from list comprehension does not work in numba:
-    # see https://github.com/numba/numba/issues/2771
-    #
-    # result = tuple(f * g0[i] for i in range(4))
-    # return result
+def mul_s_real(g0, f):
     r0 = GROUP_TYPE_REAL(f) * g0[0]
     r1 = GROUP_TYPE_REAL(f) * g0[1]
     r2 = GROUP_TYPE_REAL(f) * g0[2]
@@ -495,7 +490,7 @@ def mul_s_real(g0, f):  # TODO: rename to mul
 
 # Conjugate transpose
 @myjit
-def dagger(a):  # TODO: rename to 'H'? See Numpy https://docs.scipy.org/doc/numpy/reference/generated/numpy.matrix.H.html
+def dagger(a):
     r0 = a[0].conjugate()
     r1 = a[1].conjugate()
     r2 = a[2].conjugate()
@@ -565,7 +560,7 @@ def tr(a):
 
 # Trace of square
 @myjit
-def sq(a): # tr(mul(a,a)) - (valid only for traceless matrices a)<- for me too?.
+def sq(a):
     return 3 * (a[0] * a[0] + (2 / 3) * a[1] * a[1] + (2 / 3) * a[2] * a[2] + (2 / 3) * a[3] * a[3] + (4 / 6) * a[4] * a[4] + (4 / 6) * a[5] * a[5] + (2 / 3) * a[6] * a[6] 
                 + (2 / 3) * a[7] * a[7] + (2 / 3) * a[8] * a[8])
 
