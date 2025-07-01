@@ -455,12 +455,7 @@ def add(g0, g1):
 
 # Multiply by scalar
 @myjit
-def mul_s(g0, f):  # TODO: rename to mul
-    # Unfortunately, tuple creation from list comprehension does not work in numba:
-    # see https://github.com/numba/numba/issues/2771
-    #
-    # result = tuple(f * g0[i] for i in range(4))
-    # return result
+def mul_s(g0, f):
     r0 = GROUP_TYPE_COMPLEX(f) * g0[0]
     r1 = GROUP_TYPE_COMPLEX(f) * g0[1]
     r2 = GROUP_TYPE_COMPLEX(f) * g0[2]
