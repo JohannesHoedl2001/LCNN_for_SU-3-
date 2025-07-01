@@ -9,7 +9,7 @@ This repository extends the Lattice gauge equivariant convolutional neural netwo
 The original contributions can be found at:
 
 - [**arXiv:2012.12901 – Lattice Gauge Equivariant Convolutional Networks**](https://arxiv.org/abs/2012.12901)
-- [**Original GitLab repository**]([https://gitlab.com/openpixi/lge-cnn](https://gitlab.com/openpixi/lge-cnn/-/tree/prl_2022?ref_type=heads))
+- [**Original GitLab repository**](https://gitlab.com/openpixi/lge-cnn/-/tree/prl_2022?ref_type=heads)
 
 The original codebase is licensed under the MIT License.  
 This repository **inherits their license**. See the original repository for further details.
