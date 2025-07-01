@@ -22,6 +22,8 @@ This repository **inherits their license**. See the original repository for furt
 - Evaluation of SU(3) Wilson loops in two dimensions
 - Monte Carlo study of the data generation
 
+**Note:**  
+The current implementation is not compatible with SU(2), as the initialization routine (specifically the flipping behavior) was adapted for SU(3). Support for SU(2) can be reintroduced with minor modifications.
 ---
 
 ## Acknowledgements
